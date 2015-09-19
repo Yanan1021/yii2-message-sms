@@ -16,7 +16,7 @@
 *  160022 : 【短信】对同一个手机一天发送的短信超过限制次数
 
 
-## Config
+## 短信网关配置文件
 
 ```php
 return [
@@ -73,7 +73,8 @@ return [
 
 ## message.php 包含发送的封装
 ```php
-$result = app\components\Message::sendSms('930978945', array(
+// 发送短信必须指定模板ID
+$result = Message::sendSms('930978945', array(
     'code'  => 1234,
     'area'  => '886', # 区号，支持国际短信
 ), 1000);
