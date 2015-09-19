@@ -1,7 +1,8 @@
 # yii2-message-sms
 
-短信网关配置文件:
+### 短信网关配置文件:
 
+```php
 'smser' => [
     'class' => 'app\extensions\message\Smser',
     'defaultProvider' => 'Yunpian',// 'Yunpian',
@@ -24,4 +25,4 @@
         ],
     ],
 ],
-
+```
